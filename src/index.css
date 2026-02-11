@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 60px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111;
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-links li{
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.nav-links li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 50px 80px;
+}
+
+.product-card {
+  border: none;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.rating {
+  margin: 10px 0;
+  color: #444;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: gray;
+  font-size: 14px;
+}
+
+.discount {
+  color: green;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 50px 80px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer h3,
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.scroll-container {
+  position: fixed;
+  right: 20px;
+  top: 100px;
+  width: 4px;
+  height: 70vh;
+  background: #eee;
+}
+
+.scroll-progress {
+  width: 100%;
+  background: black;
+  transition: height 0.2s ease;
+}
+
+
+
+.nav-scroll-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: black;
+  transition: left 0.2s ease;
+}
