@@ -1,5 +1,5 @@
 import Footer from "./components/footer";
-import NavBar from "./components/navBar";
+import NavBar from "./components/NavBar";
 import ProductCard from "./components/postCards";
 import ScrollProgress from "./components/scrollProgress";
 import products from "./data/products";
