@@ -18,20 +18,21 @@ The layout is **not fully responsive** and is intended for learning and experime
 
 ## 📂 Project Structure
 
-
+```
 src/
 │
 ├── components/
-│ ├── NavBar.jsx
-│ ├── Footer.jsx
-│ ├── postCards.jsx
-│ └── scrollProgress.jsx
+│   ├── NavBar.jsx
+│   ├── Footer.jsx
+│   ├── postCards.jsx
+│   └── scrollProgress.jsx
 │
 ├── data/
-│ └── products.js
+│   └── products.js
 │
 ├── App.jsx
 └── main.jsx
+```
 
 
 ---
